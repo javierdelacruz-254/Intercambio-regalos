@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - 2024</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" type="image/x-icon" href="/img/icon.png">
+</head>
+<body>    
+    <div class="video-container">
+        <video autoplay muted loop id="background-video">
+            <source src="/video/Fondo video - Adornos en árbol de Navidad HD.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="content">
+        <h1>¡Dios les bendiga!</h1>
+        <span>Bienvenida familia Carranza</span>
+        <div class="icon-container">
+            <i class="fa-solid fa-chevron-down" id="toggle-icon" title="Mostrar mas"></i>
+        </div>
+    </div>
+    <img id="panel-image" src="" alt="Imagen no encontrada">
+    <h2 id="deseos">Lista de deseos</h2>
+    <main class="wishlist">
+        <div class="family-content">
+            <section class="cards-grid">
+                <div class="card" data-name="Dali" data-wish="Zapatos vestir Stiletto">
+                    <div class="card-front">
+                        <img src="/img/dali.jpeg" alt="Dali">
+                        <p>Dali Horna</p>
+                    </div>
+                </div>
+                <div class="card" data-name="Ana" data-wish="Un set de pinturas">
+                    <div class="card-front">
+                        <img src="img/ana.jpeg" alt="Ana">
+                        <p>Ana Horna</p>
+                    </div>
+                </div>
+                <div class="card" data-name="Jose" data-wish="Un set de pinturas">
+                    <div class="card-front">
+                        <img src="img/jose.jpeg" alt="Jose">
+                        <p>Jose Horna</p>
+                    </div>
+                </div>
+                <div class="card" data-name="Meyner" data-wish="Un set de pinturas">
+                    <div class="card-front">
+                        <img src="img/meyner.jpg" alt="Meyner">
+                        <p>Meyner Horna</p>
+                    </div>
+                </div>
+                <div class="card" data-name="Abigail" data-wish="Un set de pinturas">
+                    <div class="card-front">
+                        <img src="img/abigail.jpg" alt="Abigail">
+                        <p>Abigail Valverde</p>
+                    </div>
+                </div>
+                <div class="card" data-name="Frank" data-wish="Un set de pinturas">
+                    <div class="card-front">
+                        <img src="img/frank051.jpg" alt="Frank">
+                        <p>Frank Valverde</p>
+                    </div>
+                </div>
+                <div class="card" data-name="Maricielo" data-wish="Un set de pinturas">
+                    <div class="card-front">
+                        <img src="img/maricielo.jpg" alt="Maricielo">
+                        <p>Maricielo Alvarado</p>
+                    </div>
+                </div>
+                <div class="card" data-name="Luis" data-wish="Un set de pinturas">
+                    <div class="card-front">
+                        <img src="/img/luis053.jpg" alt="Luis">
+                        <p>Luis Alvarado</p>
+                    </div>
+                </div>
+                <div class="card" data-name="Javiercito" data-wish="Un set de pinturas">
+                    <div class="card-front">
+                        <img src="/img/javiercito050.jpg" alt="Javiercito">
+                        <p>Javiercito De la Cruz</p>
+                    </div>
+                </div>
+                <div class="card" data-name="Liliana" data-wish="Un set de pinturas">
+                    <div class="card-front">
+                        <img src="img/liliana054.jpg" alt="Liliana">
+                        <p>Liliana Horna</p>
+                    </div>
+                </div>
+                <div class="card" data-name="Vanessa" data-wish="Un set de pinturas">
+                    <div class="card-front">
+                        <img src="img/ana.jpg" alt="Vanessa">
+                        <p>Vanessa Zavaleta</p>
+                    </div>
+                </div>
+                <div class="card" data-name="Britany" data-wish="Un set de pinturas">
+                    <div class="card-front">
+                        <img src="img/ana.jpg" alt="Britany">
+                        <p>Britany Carranza</p>
+                    </div>
+                </div>
+                <div class="card" data-name="Saira" data-wish="Un set de pinturas">
+                    <div class="card-front">
+                        <img src="img/ana.jpg" alt="Saira">
+                        <p>Saira Aro</p>
+                    </div>
+                </div>
+                <div class="card" data-nombre="Jhon" data-wish="Un set de pinturas">
+                    <div class="card-front">
+                        <img src="img/ana.jpg" alt="Jhon">
+                        <p>Jhon Aro</p>
+                    </div>
+                </div>
+                <div class="card" data-name="Milagros" data-wish="Un set de pinturas">
+                    <div class="card-front">
+                        <img src="img/milagros.jpg" alt="Milagros">
+                        <p>Milagros Carranza</p>
+                    </div>
+                </div>
+
+            </section>
+            <section class="info-panel" id="info-panel">
+                <h2>Detalles del Deseo</h2>
+                <div class="info-text">
+                    <p id="selected-name">Selecciona a una persona para ver los detalles.</p>
+                    <i class="fa-solid fa-file-import"></i>
+                    <p id="selected-wish"></p>
+                </div>
+            </section>
+        </div>
+           
+
+        <section class="gift-wheel">
+            <video autoplay loop muted class="fondo-video">
+                <source src="/video/Fondo video - Adornos en árbol de Navidad HD.mp4" type="video/mp4">
+                Tu navegador no soporta videos.
+            </video>
+            <div class="overlay">
+                <h1 class="title"> Ruleta de Participantes </h1>
+                <div id="wheel-container">
+                    <canvas id="gift-wheel-canvas"></canvas>
+                </div>
+                <button id="spin-wheel"> Girar Rueda </button>
+                <p id="gift-result">Presiona el botón para repartir un regalo</p>
+            </div>
+        </section>
+    </main>
+    
+
+    <script src="/js/index.js"></script>
+</body>
+</html>
